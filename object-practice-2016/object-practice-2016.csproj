@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="CHito.cs" />
     <Compile Include="CIkimono.cs" />
+    <Compile Include="CSakana.cs" />
+    <Compile Include="CTori.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
