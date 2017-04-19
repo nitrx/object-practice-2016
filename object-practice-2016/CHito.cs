@@ -20,7 +20,7 @@ namespace object_practice_2016
             return count;
         }
 
-        public string action()
+        public override string action()
         {
             return "テクテク";
         }
