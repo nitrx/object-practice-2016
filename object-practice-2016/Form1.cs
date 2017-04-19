@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+
+
 namespace object_practice_2016
 {
     public partial class Form1 : Form
@@ -30,23 +34,23 @@ namespace object_practice_2016
         {
             ikimonos = new CIkimono[HITO_NAMES.Length+TORI_NAMES.Length+SAKANA_NAMES.Length];
             int index = 0;
-            for (int i = 0; i< HITO_NAMES.Length;i++)
+            for (int i = 0; i< HITO_NAMES.Length;i++,index++)
             {
-                ikimonos[i] = new CHito(HITO_NAMES[i]);
+                ikimonos[index] = new CHito(HITO_NAMES[i]);
                 //名前リストを表示
-                textBox1.AppendText("" + i + ":" + HITO_NAMES[i] + "\r\n");
+                textBox1.AppendText("" + index+ ":" + HITO_NAMES[i] + "\r\n");
             }
 
-            for (int i = 0; i< TORI_NAMES.Length;i++)
+            for (int i = 0; i< TORI_NAMES.Length;i++,index++)
             {
-                ikimonos[i] = new CTori(TORI_NAMES[i]);
-                textBox1.AppendText("" + i + ":" + TORI_NAMES[i] + "\r\n");
+                ikimonos[index] = new CTori(TORI_NAMES[i]);
+                textBox1.AppendText("" + index + ":" + TORI_NAMES[i] + "\r\n");
             }
 
-            for (int i = 0; i <SAKANA_NAMES.Length; i++)
+            for (int i = 0; i <SAKANA_NAMES.Length; i++,index++)
             {
-                ikimonos[i] = new CSakana(SAKANA_NAMES[i]);
-                textBox1.AppendText("" + i + ":" + SAKANA_NAMES[i] + "\r\n");
+                ikimonos[index] = new CSakana(SAKANA_NAMES[i]);
+                textBox1.AppendText("" + index + ":" + SAKANA_NAMES[i] + "\r\n");
             }
         }
 
