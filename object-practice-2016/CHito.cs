@@ -6,25 +6,18 @@ using System.Threading.Tasks;
 
 namespace object_practice_2016
 {
-    class CHito
+    class CHito : CIkimono
     {
-        private int count = 0;
-        private string name = "";
+        private static int count = 0;
 
-        public CHito(string nm)
+        public CHito(string nm) : base(nm)
         {
-            name = nm;
             count++;
         }
 
-        public int getCount()
+        public static int getCount()
         {
             return count;
-        }
-
-        public string hello()
-        {
-            return "私は" + name + "です";
         }
 
         public string action()
